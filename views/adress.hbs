@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="signupSection" id="signupSection">
+    <div class="info">
+        <h2>Mission to Deep Space</h2>
+        <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+        <p>The Future Is Here</p>
+    </div>
+    <form action="/signup2" method="GET" class="signupForm" name="signupform">
+        <h2>Sign Up</h2>
+        <ul class="noBullet">
+            <li>
+                <label for="street"></label>
+                <input type="text" class="inputFields" id="street" name="street" placeholder="Street" value="{{street}}" required/>
+            </li>
+            <li>
+                <label for="zip"></label>
+                <input type="text" class="inputFields" id="zip" name="zip" placeholder="ZIP-Code" value="{{zip}}" required/>
+            </li>
+            <li>
+                <label for="city"></label>
+                <input type="text" class="inputFields" id="city" name="city" placeholder="City" value="{{city}}" required/>
+            </li>
+            <li id="center-btn">
+                <input type="submit" class="btn" name="action" value="Back">
+                <input type="submit" class="btn" name="action" value="Next">
+            </li>
+        </ul>
+    </form>
+</div>
+<div id="messageSection">
+
+</div>
+
+</body>
+</body>
+</html>
